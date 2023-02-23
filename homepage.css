@@ -1,9 +1,7 @@
-
-
-
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: #71c78b; /* Green */
+    border-radius: 8px;
+    border-color: white;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -14,6 +12,18 @@
 }
 
 .button:hover {
-    background-color: white; /* Green */
+    background-color: rgb(255, 255, 255); /* Green */
     color: rgb(214, 76, 76);
-  }
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+   
+    
+}
+
+.navbar {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
