@@ -1,4 +1,4 @@
-<div>
+<div class="navbar">
     <ul>
         <li><a href="create_event.html" class="navbar">Create Event</a></li>
         <li><a href="friends.html" class="navbar">Friends</a></li>
