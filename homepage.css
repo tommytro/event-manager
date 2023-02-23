@@ -16,11 +16,31 @@
     color: rgb(214, 76, 76);
 }
 
+.text {
+    color: black;
+    margin: 0 -25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 10px;
+    width: 160;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    margin: 0 10px;
+}
+
 li {
     display: inline-block;
-    margin: 0 10px;
-   
-    
+    margin: 0 10px; 
 }
 
 .navbar {
