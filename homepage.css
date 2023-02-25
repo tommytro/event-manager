@@ -87,7 +87,7 @@ li {
 }
 
 .friendsContainer {
-     margin: 0 0px;
+    margin: 0 0px;
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -96,11 +96,15 @@ li {
     list-style-type: none; 
     padding: 0; 
     margin: 0; 
+    width: auto;
+    height: auto;
 }
   
 .friendsListLI{
+    display: block;
     border: 1px solid #ddd; 
     margin-top: -1px; 
+    border-radius: 4px;
     background-color: #f6f6f6; 
     padding: 12px;
 }
