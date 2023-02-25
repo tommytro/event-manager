@@ -11,7 +11,11 @@
    
         
     </head>
-    <body style="background-color:rgb(214, 76, 76);">
-
+    <body>
+        <img src="homepage static.png" width="500" height="500" alt="Calendar Logo" id="homepagestatic">
+        <div id="footer">
+            <?php include("footer.php"); ?>
+        </div>
+        
     </body>
 </html>

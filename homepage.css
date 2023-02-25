@@ -1,3 +1,7 @@
+body {
+    background-color:rgb(224, 102, 102, 1);
+}
+
 .button {
     background-color: #71c78b; /* Green */
     border-radius: 8px;
@@ -64,4 +68,19 @@ li {
     background-color: #ffffff;
     border-radius: 8px;
     
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#homepagestatic {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto
 }

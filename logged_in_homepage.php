@@ -7,7 +7,7 @@
     <?php include("logo.php"); ?>
     
     </head>
-    <body style="background-color:rgb(214, 76, 76);">
+    <body>
 
         <?php include("navbar.php"); ?>
         <!-- <?php include("calendar.html"); ?> -->
