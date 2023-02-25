@@ -1,4 +1,4 @@
-<a href="index.php" style="text-decoration: none">
+<a href="index.php" class="container">
     <div class="container" style="cursor: pointer">
         
         <div class="logoimg">

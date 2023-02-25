@@ -31,6 +31,7 @@ body {
 }
 
 .container {
+    text-decoration: none;
     margin: 0 0px;
     width: 160;
     background-color: #ffffff;
