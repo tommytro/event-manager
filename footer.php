@@ -1,3 +1,3 @@
 <div class="navbar">
-    <h3>&copy; Event Manager</h3>
+    <h4>&copy; Event Manager</h4>
 </div>

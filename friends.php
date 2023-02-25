@@ -10,8 +10,10 @@
     
     </head>
     <body>
-
         <?php include("navbar.php"); ?>
-        <!-- <?php include("calendar.html"); ?> -->
+
+        <h3 class="friendsContainer">Friends List: <?php include("friendslist.php"); ?></h3>
+        
+
     </body>
 </html>
