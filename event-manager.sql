@@ -1,0 +1,17 @@
+CREATE TABLE `Events` (
+	`EventID` INT(20) NOT NULL AUTO_INCREMENT,
+	`EventName` VARCHAR(55) NOT NULL,
+	`CreatorUsername` VARCHAR(55) NOT NULL,
+	`EventDate` DATE NOT NULL,
+	`Collaborators` TEXT(6400),
+	`EventDesc` TEXT(6400),
+	PRIMARY KEY (`EventID`)
+);
+
+CREATE TABLE `Users` (
+	`UserID` INT(20) NOT NULL AUTO_INCREMENT,
+	`Username` VARCHAR(55) NOT NULL,
+	`Email` VARCHAR(155) NOT NULL,
+	`Password` VARCHAR(155) NOT NULL,
+	PRIMARY KEY (`UserID`)
+);
