@@ -10,7 +10,9 @@
         <?php include("logo.php"); ?>
 
         <div>
-            <button  class="button" onclick="logged_in_homepage.php">TEST</button>
+            <form style="float: right" action="loginhandler.php"> 
+                <button  class="button" onclick="loginhandler.php">Login</button>
+            </form>
         </div>
    
         
