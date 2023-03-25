@@ -11,6 +11,7 @@
     
     // Check connection
     if($link === false){
+        echo "error";
         die("ERROR: Could not connect. " . mysqli_connect_error());
     }
 ?>
