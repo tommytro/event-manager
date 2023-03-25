@@ -8,6 +8,10 @@
             <button  class="button" onclick="logged_in_homepage.php">Login</button>
         </form>   
         <?php include("logo.php"); ?>
+        
+        <div>
+            <?php include("loginhandler.php"); ?>
+        </div>
    
         
     </head>
