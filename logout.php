@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION = array();
+$_SESSION = array(); //Make session variables empty
 session_destroy();
-header("location: index.php");
+header("location: index.php"); //Redirect to landing page
 exit;
 ?>

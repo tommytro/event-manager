@@ -13,6 +13,7 @@ body {
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;
+
 }
 
 .button:hover {
@@ -107,4 +108,17 @@ li {
     border-radius: 4px;
     background-color: #f6f6f6; 
     padding: 12px;
+}
+
+.welcome{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0 -25px;
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+#loginbuttonform {
+    float: right;
 }

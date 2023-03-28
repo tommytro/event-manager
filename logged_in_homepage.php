@@ -3,7 +3,7 @@
     <title>Event Manager Project</title>
     <link rel="icon" type"image/x-icon" href="favicon.ico"/> 
     <head>
-        <form style="float: right" action="logout.php"> 
+        <form id="loginbuttonform" action="logout.php"> 
             <button  class="button" onclick="logout.php">Log Out</button>
         </form>   
     <?php include("logo.php"); ?>
@@ -12,6 +12,6 @@
     <body>
 
         <?php include("navbar.php"); ?>
-        <!-- <?php include("calendar.html"); ?> -->
+        <?php include("welcome.php"); ?>
     </body>
 </html>
