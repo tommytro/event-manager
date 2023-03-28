@@ -11,8 +11,8 @@
     </head>
     <body>
         <?php include("navbar.php"); ?>
-
-        <h3 class="friendsContainer">Friends List: <?php include("eventlist.php"); ?></h3>
+        
+        <h3 class="friendsContainer">Events List: <?php include("eventslist.php"); ?></h3>
         
 
     </body>

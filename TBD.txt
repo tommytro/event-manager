@@ -1,0 +1,3 @@
+--add parametization on event form to prevent injection attacks
+--check for injection issues on signup/login form
+--add friendslist feature. sql database will use a table with accepted/unaccepted/rejected status
