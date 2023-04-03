@@ -3,14 +3,16 @@ session_start();
 require_once "config.php";
 
 $sql = "SELECT EventName, CreatorUsername, EventDate, EventDesc FROM events WHERE CreatorUsername = '{$_SESSION["username"]}'";
-$result = $link->query($sql);
+$result = $pdo->query($sql);
 
-if($result->num_rows > 0){
+if($result->rowCount() > 0 ){
 
-    while($row = $result->fetch_assoc()){
+    foreach($result as $row){
         echo "Event name: " . $row["EventName"] . " Creator: " . $row["CreatorUsername"] . 
         " Date: " . $row["EventDate"] . " Details: " . $row["EventDesc"] . "<br>";
     }
+}else{
+    echo "You haven't made an event!";
 }
 
 ?>

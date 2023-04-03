@@ -5,10 +5,8 @@ session_start();
 
 $eventname = $eventdesc = $eventdate = $creatorname = "";
 
-if($link === false){
+if($pdo === false){
     echo "error";
-    die("ERROR: Could not connect. "
-        . mysqli_connect_error());
 }
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -21,15 +19,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $sql ="INSERT INTO events (EventName, CreatorUsername, EventDate, EventDesc) 
                 VALUES ('$eventname', '$creatorname', '$eventdate', '$eventdesc')";
         
-    if(mysqli_query($link, $sql)){
-        
+    if($stmt = $pdo->prepare($sql)){
+        if($stmt->execute()){
+
+        }
     }else{
         echo "$eventname, $eventdesc, $eventdate, $creatorname";
         echo "Something went wrong. Please try again later.";
     }
     
     // Close connection
-    mysqli_close($link);
+    unset($stmt);
 }
 ?>
 

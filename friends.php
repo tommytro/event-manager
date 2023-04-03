@@ -12,7 +12,7 @@
     <body>
         <?php include("navbar.php"); ?>
 
-        <h3 class="friendsContainer">Friends List: <?php include("friendslist.php"); ?></h3>
+        <h3 class="friendsContainer">Friends List: To be added later! </h3>
         
 
     </body>

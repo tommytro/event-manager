@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $username = trim($_POST["username"]);
     }
-     
+    
     // Check if password is empty
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter your password.";
@@ -35,35 +35,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT UserID, Username, Password FROM users WHERE Username = ?";
+        $sql = "SELECT Username, password FROM users WHERE Username = :username";
         
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
             
             // Set parameters
-            $param_username = $username;
+            $param_username = trim($_POST["username"]);
             
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Store result
-                mysqli_stmt_store_result($stmt);
-                
+            if($stmt->execute()){
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){                    
-                    // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
+                if($stmt->rowCount() == 1){
+                    if($row = $stmt->fetch()){
+                        $username = $row["Username"];
+                        $hashed_password = $row["password"];
                         if(password_verify($password, $hashed_password)){
                             // Password is correct, so start a new session
                             session_start();
                             
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
                             
-                            // Redirect user to user homepage
+                            // Redirect user to welcome page
                             header("location: logged_in_homepage.php");
                         } else{
                             // Password is not valid, display a generic error message
@@ -75,16 +71,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     $login_err = "Invalid username or password.";
                 }
             } else{
-                echo "Something went wrong. Please try again later.";
+                echo "Oops! Something went wrong. Please try again later.";
             }
 
             // Close statement
-            mysqli_stmt_close($stmt);
+            unset($stmt);
         }
     }
     
     // Close connection
-    mysqli_close($link);
+    unset($pdo);
 }
 ?>
  
