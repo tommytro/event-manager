@@ -1,8 +1,11 @@
+
 body {
-    background-color:rgb(224, 102, 102, 1);
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    background-color:rgb(46, 75, 128);
 }
 
 .button {
+    
     background-color: #71c78b; /* Green */
     border-radius: 8px;
     border-color: white;
@@ -23,12 +26,16 @@ body {
 
 .logotext {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
     text-decoration: none;
     margin: 0 -25px;
     font-size: 10px;
     padding-left: 20px;
     
+}
+
+#loginButton{
+    float: right;
 }
 
 .container {
@@ -47,16 +54,27 @@ body {
 
 li {
     display: inline-block;
-    margin: 0 10px; 
+    margin: 10 15px; 
 }
 
-.navbar {
+.navbar #navbar {
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    border-radius: 5px;
     text-decoration: none;
     text-align: center;
     color: black;
+    margin:auto;
+}
+
+#navbar .active {
+    color:            #F8F8F8;
+    background-color: #424656;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.navbar .button:hover{
+    color: rgb(46, 75, 128);
 }
 .calendar {
     text-align: right;
@@ -66,7 +84,7 @@ li {
 
 .create_event_container {
     margin: 0 0px;
-    background-color: #ffffff;
+    background-color: #B46572;
     border-radius: 8px;
     
 }
@@ -84,6 +102,27 @@ li {
     margin-right: auto;
     height: auto;
     width: auto
+}
+
+.eventContainer {
+    position: relative;
+    width:fit-content;
+    margin: auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+
+}
+
+#eventItems {
+    text-align: left;
+    border-bottom: 2px solid black;
+    column-span: 100%;
+
+}
+
+#leftJustify{
+    text-align: left;
 }
 
 .friendsContainer {
@@ -120,4 +159,81 @@ li {
 
 #loginbuttonform {
     float: right;
+}
+
+.items {
+    color:#05ee4b;
+}
+
+.button-fancy {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-fancy:hover {
+  background-color: #d8dbdb;
+}
+
+.button-fancy:focus {
+  outline: 0;
+}
+
+.textbox-fancy{
+    background-color: #A6ABBD;
+    border: 1px solid #424656;
+    border-radius: 5px;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 0 10px;
+    position: inherit;
+    text-align: left;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.signup-button{
+    background-color: #2E4B80;
+    border:5px solid #424656 !important;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 50 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.signup-button:hover {
+    background-color: #424656;
 }

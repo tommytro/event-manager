@@ -1,4 +1,4 @@
-<div class="eventlist">
+<div>
     <ul>
         <li><?php include "eventlistgetter.php" ?></li>
     </ul>

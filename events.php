@@ -3,17 +3,13 @@
     <title>Event Manager Project</title>
     <link rel="icon" type"image/x-icon" href="favicon.ico"/> 
     <head>
-        <form style="float: right" action="logout.php"> 
-            <button  class="button" onclick="logout.php">Log Out</button>
-        </form>     
+    <?php include("loginButton.php"); ?>      
     <?php include("logo.php"); ?>
     
     </head>
     <body>
         <?php include("navbar.php"); ?>
         
-        <h3 class="friendsContainer">Events List: <?php include("eventslist.php"); ?></h3>
-        
-
+        <div  class="eventContainer"><?php include("eventslist.php"); ?></div>
     </body>
 </html>

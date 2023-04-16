@@ -4,7 +4,7 @@
     <link rel="icon" type"image/x-icon" href="favicon.ico"/> 
     <head>
         <form id="loginbuttonform" action="logout.php"> 
-            <button  class="button" onclick="logout.php">Log Out</button>
+            <button  class="button-fancy" onclick="logout.php">Log Out</button>
         </form>   
     <?php include("logo.php"); ?>
     

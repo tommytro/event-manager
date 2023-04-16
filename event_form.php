@@ -34,9 +34,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 
 <html>
-    <div>
         <form action="" method="post">
-            <div class="create_event_container">
+            <div class="eventContainer">
                 <h1>Create Event</h1>
                 <p>Please fill in this form to create a new event</p>
                 <hr>
@@ -44,9 +43,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="date" placeholder="Event Date" name="eventdate" id="eventdate" required>
                 <input type="text" placeholder="Extra Details" name="eventdesc" id="desc">
                 <hr>
-                <button type="submit">Create Event</button>
+                <button class="button-fancy" type="submit">Create Event</button>
             </div>
         </form>
-    </div>
 </html>
     
