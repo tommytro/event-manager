@@ -1,3 +1,4 @@
+<?php include "check-login.php"; ?>
 <html>
     <link rel="stylesheet" href="homepage.css">
     <title>Event Manager Project</title>
@@ -11,7 +12,7 @@
         <?php include("navbar.php"); ?>
 
         <h3 class="friendsContainer">Friends List: To be added later! </h3>
-        
+        <?php include("footer.php"); ?>
 
     </body>
 </html>

@@ -56,7 +56,6 @@ if($result->rowCount() > 0 ){
             <td id="eventItems"><?php echo $row['CreatorUsername']?></td>
             <td><span class='delete' data-id='<?php echo $row['EventID']?>'>Delete</span></td>
         </tr>   
-    
 <?php
     }
     
@@ -65,6 +64,7 @@ if($result->rowCount() > 0 ){
     echo "You haven't made an event!";
 }
 ?>
+
 </tbody>
            
 </table>

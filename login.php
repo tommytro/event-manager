@@ -83,7 +83,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     unset($pdo);
 }
 ?>
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -97,6 +96,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="eventContainer">
+        <span class="invalid-feedback"><?php echo $username_err; ?></span>
+        <span class="invalid-feedback"><?php echo $password_err; ?></span>
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
 
@@ -109,13 +110,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div>
                 <label>Username</label>
-                <input type="text" name="username" class="textbox-fancy" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+                <input type="text" name="username" class="textbox-fancy" id="username" <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                
             </div>    
             <div>
                 <label>Password</label>
-                <input type="password" name="password" class="textbox-fancy" <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+                <input type="password" name="password" class="textbox-fancy" id="password"<?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+
             </div>
             <div>
                 <input type="submit" class="button-fancy" value="Login">

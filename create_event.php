@@ -13,6 +13,6 @@
 
         <?php include("navbar.php"); ?>
         <?php include("event_form.php"); ?>
-        
+        <?php include("footer.php"); ?>
     </body>
 </html>
