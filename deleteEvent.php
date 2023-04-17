@@ -2,7 +2,7 @@
     require_once "config.php";
 
     try{
-        $sql = "DELETE FROM events WHERE EventID='" . $_GET['EventID'] . "'";  
+        $sql = "DELETE FROM events WHERE EventID='" . $_POST['EventID'] . "'";  
         $pdo->exec($sql);
         echo "Records were deleted successfully.";
     } catch(PDOException $e){

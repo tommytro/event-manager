@@ -1,3 +1,4 @@
+<?php include "check-login.php"; ?>
 <html>
     <link rel="stylesheet" href="homepage.css">
     <title>Event Manager Project</title>
@@ -15,3 +16,5 @@
         <?php include("welcome.php"); ?>
     </body>
 </html>
+
+        

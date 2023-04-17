@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION = array(); //Make session variables empty
-session_destroy();
+$_SESSION["loggedin"] = false;
+$_SESSION["username"] = '';  
 header("location: index.php"); //Redirect to landing page
 exit;
 ?>

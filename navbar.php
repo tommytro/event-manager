@@ -12,9 +12,9 @@
 <div class="navbar">
     <div id="navbar">
         <ul>
-            <li><a href="create_event.php" id="navbar">Create Event</a></li>
-            <li><a href="friends.php" id="navbar">Friends</a></li>
-            <li><a href="events.php" id="navbar">Events</a></li>
+            <li><a href="create_event.php" class="navbar-button">Create Event</a></li>
+            <li><a href="friends.php" class="navbar-button">Friends</a></li>
+            <li><a href="events.php" class="navbar-button">Events</a></li>
         
         </ul>
     </div>

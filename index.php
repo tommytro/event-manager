@@ -1,21 +1,10 @@
-<?php include("check-login.php"); ?>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-<script>
-    $(function(){
-        $.ajaxSetup({
-            cache: false
-        });
-
-        var spinner = "<img src='http://i.imgur.com/pKopwXp.gif' alt='loading...' />";
-        var url = "logged_in_homepage.php";
-
-        $("#loadbasic").click(function(){
-            $("#result").html(spinner).load(url);
-        });
-    });
-
-</script>
+<?php 
+    session_start();
+    if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+        header("location: logged_in_homepage.php");
+        exit;
+    }
+?>
 
 <html>
     <link rel="stylesheet" href="homepage.css">
@@ -27,11 +16,7 @@
     </head>
 
     <body>
-    <div class="excontainer">
-    <button id="loadbasic">basic load</button>
-    <div id="result"></div>
- 
-    </div>
+
         <div class="eventContainer"> 
             <a class="signup-button" href="login.php">Signup / Login</a>
         </div> 
@@ -42,6 +27,4 @@
     </body>
 
 </html>
-
-
 
