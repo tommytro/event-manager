@@ -31,7 +31,7 @@
     }
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script> 
+<!-- <script> 
     var check = 0;
 
     if(check == 1){
@@ -64,7 +64,7 @@
         check = 1; 
         alert("here");
 };   
-</script>
+</script> -->
 
 
 <html>
@@ -77,7 +77,6 @@
             <input type="date" placeholder="Event Date" name="eventdate" id="eventdate" required>
             <input type="text" placeholder="Extra Details" name="eventdesc" id="desc">
             <hr>
-            <input type="button" onclick="clicker()" value="test">
                 
             <button class="button-fancy" type="submit">Create Event</button>
         </div>

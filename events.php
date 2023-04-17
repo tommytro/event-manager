@@ -12,6 +12,6 @@
         <?php include("navbar.php"); ?>
         
         <div  class="eventContainer"><?php include("eventslist.php"); ?></div>
-        
+        <?php include("footer.php"); ?>
     </body>
 </html>
