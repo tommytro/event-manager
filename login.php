@@ -98,14 +98,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="eventContainer">
         <span class="invalid-feedback"><?php echo $username_err; ?></span>
         <span class="invalid-feedback"><?php echo $password_err; ?></span>
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
-
+        <span class="invalid-feedback">
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
+        </span>
+        
+        <h2>Login</h2>
+        <p>Please fill in your credentials to login.</p>
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div>
