@@ -9,13 +9,13 @@
         });
     });
 </script>
+
 <div class="navbar">
-    <div id="navbar">
-        <ul>
-            <li><a href="create_event.php" class="navbar-button">Create Event</a></li>
-            <li><a href="friends.php" class="navbar-button">Friends</a></li>
-            <li><a href="events.php" class="navbar-button">Events</a></li>
-        
-        </ul>
-    </div>
+    <ul>
+        <li><a href="create_event.php" class="navbar-button">Create Event</a></li>
+        <li><a href="friends.php" class="navbar-button">Friends</a></li>
+        <li><a href="events.php" class="navbar-button">Events</a></li>
+        <li><a href="search.php" class="navbar-button">Search</a></li>
+    </ul>
 </div>
+

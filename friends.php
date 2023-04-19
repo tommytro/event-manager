@@ -11,7 +11,7 @@
     <body>
         <?php include("navbar.php"); ?>
 
-        <h3 class="friendsContainer">Friends List: To be added later! </h3>
+        <h3 class="eventContainer">Nothing here! </h3>
         <?php include("footer.php"); ?>
 
     </body>

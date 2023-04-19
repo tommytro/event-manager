@@ -43,7 +43,6 @@ if($result->rowCount() > 0 ){
             <th>Details</th>
             <th>Event Creator</th>
         </tr>
-    
         </thead>
         <tbody>  
     <?php
